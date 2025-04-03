@@ -86,7 +86,27 @@ a {
     -khtml-opacity: 0;
     opacity: 0;
 }
-
+.scroll-indicator {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            
+            transform: translateX(-90%);
+            font-size: 4rem;
+            color: rgb(9, 158, 96);
+            animation: bounce 1.9s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-12px);
+            }
+            60% {
+                transform: translateY(-7px);
+            }
+        }
     .animated.visible {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         filter: alpha(opacity=100);
