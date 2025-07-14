@@ -150,7 +150,11 @@ section {
 .section-title, .section-sub-title {
     margin-bottom: 40px;
 }
-
+.btn-primary {
+    background-color: #eff5f1 !important;
+    color: #28a745 !important;
+    border: 1px solid #28a745 !important;
+}
 .main-wrap {
     margin: 0 auto;
 }
